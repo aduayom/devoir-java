@@ -1,0 +1,28 @@
+package HelloWorld;
+import java.util.Scanner;
+public class rectangle {
+	static Scanner ecrire = new Scanner(System.in);
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		float longueur = -1, largeur = 0 , perimetre = 0 , surface = 0 , demi = 0, diago = 0;
+		System.out.println("Entrer la longueur");
+		longueur = ecrire.nextFloat();
+		System.out.println("Entrer la largeur");
+		largeur = ecrire.nextFloat();
+		if((largeur<0 || longueur <0) && (largeur >= longueur )){
+			System.out.println("Erreur le calcul est impossible");
+					}else { perimetre= 2*(longueur+largeur);
+						System.out.println("le perimetre est " + perimetre );
+						demi = longueur + largeur ;
+						System.out.println("le demi-perimetre est " + demi );
+						surface = longueur*largeur;
+						System.out.println("la surface est " + demi );
+						
+					}
+		
+		
+		
+
+	}
+
+}

@@ -1,0 +1,39 @@
+package HelloWorld;
+import java.util.Scanner;
+public class calculatrice {
+	static Scanner ecrire = new Scanner(System.in);
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int nbre1 = 0 ,nbre2 = 0 ,nbre3=0, choix = 0;
+		System.out.println("Entrer le 1er nombre");
+		nbre1 = ecrire.nextInt();
+		System.out.println("Entrer le 2e nombre");
+		nbre2 = ecrire.nextInt();
+		System.out.println("1-SOMME:");
+		System.out.println("2-SOUSTRACTION:");
+		System.out.println("3-MULTIPLICATION:");
+		System.out.println("4-DIVISION:");
+		System.out.println("FAITES UN CHOIX");
+		choix =ecrire.nextInt();
+		if (choix == 1) {
+			nbre3 = nbre1 + nbre2;
+			System.out.println(nbre3);
+		}
+		if (choix == 2) {
+			nbre3 = nbre1 - nbre2;
+			System.out.println(nbre3);
+		}
+		if (choix == 3) {
+			nbre3 = nbre1 * nbre2;
+			System.out.println(nbre3);
+		}
+		if (choix == 4) {
+			nbre3 = nbre1 / nbre2;
+			System.out.println(nbre3);
+		}else {
+			System.out.println("choix incorrect");
+		}
+
+	}
+
+}
